@@ -11,43 +11,42 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Theoretical Computer Science, The University of Manchester, 2025 (expected)
+* B.S. in Computer Science, The University of Manchester, 2021
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Teaching Assistant
+  * The University of Manchester
+  * In Fundamentals of Computation, Algorithms, Complexity Theory, and Automated Reasoning
+  * 2021--current
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Software Engineer I
+  * Bentley Systems
+  * Duties includes: development of back-end infrastructure for civil engineering applications
+  * Tools used: C++, C#, TS, PL/SQL, T-SQL
+  * 2018--2021
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
   
-Skills
+Programming skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+ C++,
+ C#,
+ TS,
+ PL/SQL,
+ T-SQL
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+Awards
+======
+* Helena Rasiowa (Best Student Paper) Award at 33rd EACSL Annual Conference on Computer Science Logic 2025
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
@@ -57,8 +56,5 @@ Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+  {% endfor %}</ul> -->
+
