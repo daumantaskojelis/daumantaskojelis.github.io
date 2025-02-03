@@ -7,7 +7,7 @@ excerpt: 'We show that satisfiable fluted sentences admit special kinds of "nice
 date: 2025-02-10
 venue: '33rd EACSL Annual Conference on Computer Science Logic'
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://arxiv.org/abs/2411.19084'
+paperurl: 'https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CSL.2025.9'
 citation: 'Daumantas Kojelis'
 ---
 
