@@ -7,16 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. Student from the School of Computer Science at the University of Manchester.
-I am interested in expressivity of various formal languages and, in particular, the decidability and complexity status of
-various problems (e.g. finite/general satisfiability, query entailment, Craig interpolant existence, spectra etc.) for said languages.
+I am a postdoctoral researcher in the Knowledge Representation Group at Leipzig University. My current research focuses on machine learning on graphs, particularly extensions of graph neural networks, their logical expressive power, their relationship to the Weisfeiler–Leman algorithm, and their computational properties.
 
-I am one of the inventors of the [Adjacent Fragment](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ICALP.2023.111) of
-First-Order Logic and am currently working on expressiveness, spectra and decidability of satisfiability problems for extensions of the language.
+I [completed](https://research.manchester.ac.uk/en/studentTheses/extended-counting-quantifiers-and-generalisations-of-the-fluted-f/) my PhD in Computer Science at the University of Manchester in 2025. My doctoral research concerned formal languages, particularly the decidability and complexity of finite and general satisfiability, query entailment, the existence of Craig interpolants, and spectra. I remain active in this area.
 
-I expect to finish my Ph.D. by end of March 2025, and am currently looking for post-doc opportunities. 
-
-List of select publications <a href="{{ base_path }}{{ post.url }}/publications" rel="permalink">(see full list)</a>
+List of select publications ([also see DBLP](https://dblp.org/pid/346/5142))
 ======
 <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}

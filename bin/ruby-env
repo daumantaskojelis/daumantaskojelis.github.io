@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+PROJECT_RUBY_SERIES="3.3"
+PROJECT_BUNDLER_VERSION="2.6.9"
+
+project_has_expected_ruby() {
+  command -v ruby >/dev/null 2>&1 \
+    && ruby -e "exit RUBY_VERSION.start_with?('${PROJECT_RUBY_SERIES}.') ? 0 : 1" >/dev/null 2>&1
+}
+
+# Homebrew's versioned Ruby is keg-only, so it is commonly installed but not
+# present on PATH. Detect both Apple Silicon and Intel installations.
+if ! project_has_expected_ruby && command -v brew >/dev/null 2>&1; then
+  ruby_prefix="$(brew --prefix ruby@3.3 2>/dev/null || true)"
+  if [[ -n "${ruby_prefix}" && -x "${ruby_prefix}/bin/ruby" ]]; then
+    export PATH="${ruby_prefix}/bin:${PATH}"
+  fi
+fi
+
+if ! project_has_expected_ruby; then
+  cat >&2 <<'EOF'
+Ruby 3.3 is required but was not found.
+
+macOS:  brew install ruby@3.3
+Other:  install Ruby 3.3 with your preferred Ruby version manager
+
+Then run ./bin/setup again.
+EOF
+  exit 1
+fi
+
+project_bundle() {
+  bundle "_${PROJECT_BUNDLER_VERSION}_" "$@"
+}

@@ -1,7 +1,7 @@
 ---
 title: "On the Limits of Decision: the Adjacent Fragment of First-Order Logic"
 collection: publications
-category: 'Conferece Paper'
+category: 'Conference Paper'
 permalink: /publication/2023-07-05-adjacent-fragment
 excerpt: 'We define the adjacent fragment of first-order logic (without equality) and establish decidability of satisfiability.'
 date: 2023-07-05

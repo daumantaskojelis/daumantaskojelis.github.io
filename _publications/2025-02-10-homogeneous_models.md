@@ -1,7 +1,7 @@
 ---
-title: "On Homogenous Models of Fluted Languages"
+title: "On Homogeneous Models of Fluted Languages"
 collection: publications
-category: 'Conferece Paper'
+category: 'Conference Paper'
 permalink: /publication/2025-02-10-homogeneous_models
 excerpt: 'We show that satisfiable fluted sentences admit special kinds of "nice" models which we call globally/locally homogeneous. We establish that the fluted fragment with periodic counting is decidable for satisfiability, whilst the adjacent fragment with counting is not.'
 date: 2025-02-10

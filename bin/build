@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+project_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "${project_root}"
+
+# shellcheck source=ruby-env
+source "${project_root}/bin/ruby-env"
+
+if ! project_bundle check >/dev/null 2>&1; then
+  echo "Dependencies are missing. Run ./bin/setup first." >&2
+  exit 1
+fi
+
+if [[ "${1:-}" == "clean" ]]; then
+  exec bundle "_${PROJECT_BUNDLER_VERSION}_" exec jekyll clean
+fi
+
+exec bundle "_${PROJECT_BUNDLER_VERSION}_" exec jekyll build "$@"

@@ -1,24 +1,21 @@
-# Base image: Ruby with necessary dependencies for Jekyll
-FROM ruby:3.2
+FROM ruby:3.3.12-slim
 
-# Install dependencies
-RUN apt-get update && apt-get install -y \
+ARG BUNDLER_VERSION=2.6.9
+ENV BUNDLE_PATH=/usr/local/bundle
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
-    nodejs \
     && rm -rf /var/lib/apt/lists/*
 
-# Set the working directory inside the container
 WORKDIR /usr/src/app
 
-# Copy Gemfile into the container (necessary for `bundle install`)
-COPY Gemfile ./
+COPY Gemfile Gemfile.lock ./
 
-# Install bundler and dependencies
-RUN gem install bundler:2.3.26 && bundle install
+RUN gem install bundler:${BUNDLER_VERSION} --no-document \
+    && bundle install
 
-# Expose port 4000 for Jekyll server
-EXPOSE 4000
+COPY . .
 
-# Command to serve the Jekyll site
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--watch"]
+EXPOSE 4000 35729
 
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--livereload"]

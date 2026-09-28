@@ -1,7 +1,7 @@
 ---
 title: "Completing the Picture: Complexity of the Ackermann Fragment"
 collection: publications
-category: 'Conferece Paper'
+category: 'Conference Paper'
 permalink: /publication/2022-07-25-ackermann-fragment
 excerpt: 'We show that the satisfiability problem of the Ackermann fragment with equality, when the number of trailing existential quantifiers is bounded, is $${\rm ExpTime}$$-complete.'
 date: 2022-07-25

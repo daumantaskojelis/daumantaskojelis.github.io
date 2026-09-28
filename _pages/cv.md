@@ -11,15 +11,20 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in Theoretical Computer Science, The University of Manchester, 2025 (expected)
+* Ph.D. in Theoretical Computer Science, The University of Manchester, 2025
 * B.S. in Computer Science, The University of Manchester, 2021
 
 Work experience
 ======
+* Postdoctoral Researcher
+  * Leipzig University
+  * Research in Machine Learning on Graphs: GNNs, their computational aspects and expressive power
+  * 2026--current
+
 * Teaching Assistant
   * The University of Manchester
   * In Fundamentals of Computation, Algorithms, Complexity Theory, and Automated Reasoning
-  * 2021--current
+  * 2021--2025
 
 * Software Engineer I
   * Bentley Systems
@@ -27,14 +32,6 @@ Work experience
   * Tools used: C++, C#, TS, PL/SQL, T-SQL
   * 2018--2021
 
-  
-Programming skills
-======
- C++,
- C#,
- TS,
- PL/SQL,
- T-SQL
 
 Publications
 ======
@@ -44,7 +41,17 @@ Publications
 
 Awards
 ======
+* Best Student Contribution Award at the 38th International Workshop On Description Logics 2025
+* Carole Goble (Best Student Paper) Award at the Computer Science Symposium at the University Of Manchester 2025
 * Helena Rasiowa (Best Student Paper) Award at 33rd EACSL Annual Conference on Computer Science Logic 2025
+
+Programming skills
+======
+ C++,
+ C#,
+ TS,
+ PL/SQL,
+ T-SQL
   
 <!-- Talks
 ======
