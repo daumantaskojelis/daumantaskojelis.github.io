@@ -193,6 +193,15 @@ body:hover .visually-hidden button {
   margin-right: 0.5em;
 }
 
+.author__icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1em;
+  margin-right: 0.5em;
+  fill: currentColor;
+  vertical-align: -0.125em;
+}
+
 /* social icons*/
 
 .social-icons {
@@ -263,7 +272,8 @@ body:hover .visually-hidden button {
   }
 
   .ai-orcid,
-  .ai-orcid-square {
+  .ai-orcid-square,
+  .author__icon--orcid {
     color: $orcid-color;
   }
 

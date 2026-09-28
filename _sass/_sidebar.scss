@@ -129,10 +129,7 @@
 }
 
 .sidebar .author__desktop {
-  display: none;
-  @media screen and (min-width: 1024px) {
-    display: block;
-  }
+  display: block;
 }
 
 .author__pronouns {
@@ -255,6 +252,49 @@
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+/* Keep contact and academic-profile links visible in narrow previews and on
+   small screens. The theme previously hid this list behind a "Follow" button
+   and omitted location/employer entirely below the desktop breakpoints. */
+@media screen and (max-width: ($large - 1px)) {
+  .author-profile {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+
+  .author__urls-wrapper {
+    display: block;
+    grid-column: 1 / -1;
+    margin-top: 0.75em;
+    cursor: default;
+
+    button {
+      display: none;
+    }
+  }
+
+  .author__urls {
+    display: grid;
+    position: static;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    column-gap: 1em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    z-index: auto;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+
+    li.author__desktop {
+      white-space: normal;
     }
   }
 }

@@ -42,7 +42,7 @@ Publications
 Awards
 ======
 * Best Student Contribution Award at the 38th International Workshop On Description Logics 2025
-* Carole Goble (Best Student Paper) Award at the Computer Science Symposium at the University Of Manchester 2025
+* Carole Goble (Best Student Paper) Award at the Computer Science Symposium at the University of Manchester 2025
 * Helena Rasiowa (Best Student Paper) Award at 33rd EACSL Annual Conference on Computer Science Logic 2025
 
 Programming skills
@@ -53,15 +53,3 @@ Programming skills
  PL/SQL,
  T-SQL
   
-<!-- Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul> -->
-
